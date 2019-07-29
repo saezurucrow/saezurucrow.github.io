@@ -1,4 +1,4 @@
-# saezurucrow.github.io
+# saezurucrowのサイト
 
 自分用サイト（HTML/CSS,JSのお勉強用）
 
