@@ -4,7 +4,6 @@
 
 body {
   background: black;
-  color: black;
   text-align: center;
 }
 
@@ -14,6 +13,7 @@ a {
 
 i {
   font-size: 1.5em;
+  color: black;
 }
 
 h1,
