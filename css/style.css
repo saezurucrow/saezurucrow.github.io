@@ -37,8 +37,14 @@ h1 {
   line-height: 0 !important;
 }
 
-img {
-  line-height: 0;
+a {
+  position: relative;
+}
+
+a img {
+  position: absolute;
+  top: 24px;
+  right: 26px;
 }
 
 .menu {
