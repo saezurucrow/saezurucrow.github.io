@@ -18,14 +18,21 @@ i {
   color: black;
 }
 
+p {
+  margin: 20px 0;
+}
+
 h1,
 h2,
 h3,
 h4 {
-  color: white;
   margin: 0;
   margin-bottom: 10px;
   margin-top: 10px;
+}
+
+.title {
+  color: white;
 }
 
 .content {
@@ -262,4 +269,21 @@ a img {
   transition-duration: 780ms;
   -webkit-transform: translate3d(-0.25084px, -104.9997px, 0);
   transform: translate3d(-0.25084px, -104.9997px, 0);
+}
+
+.image_box {
+  display: flex;
+  justify-content: center;
+  /* 子要素をflexboxにより中央に配置する */
+  align-items: center;
+  /* 子要素をflexboxにより中央に配置する */
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+}
+
+.img:nth-child(1) {
+  margin-right: 50px;
 }
