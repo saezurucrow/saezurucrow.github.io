@@ -21,14 +21,38 @@
 					<span class="hamburger hamburger-3"></span>
 				</label>
 
-				<a href="#" class="menu-item about"> <i class="far fa-address-card"></i> </a>
-				<a href="#" class="menu-item pf"> <i class="far fa-file-code"></i> </a>
-				<a href="https://github.com/saezurucrow" target="_blank" class="menu-item github"> <i class="fab fa-github"></i></a>
-				<a href="https://twitter.com/len_crow" target="_blank" class="menu-item twitter"> <i class="fab fa-twitter"></i> </a>
-				<a href="https://qiita.com/len_crow" target="_blank" class="menu-item qiita"> <img src="image/qiita-favicon.png" width="25" height="25"> </a>
-				<a href="https://www.wantedly.com/users/75384147" target="_blank" class="menu-item wantedly"> <img src="image/wantedly_mark.png" width="30" height="30"> </a>
+
+				<a href="" class="menu-item about js-modal-open" data-target="modal01"> <i class="far fa-address-card"></i> </a>
+				<a href="" class="menu-item pf js-modal-open" data-target="modal02"> <i class="far fa-file-code"></i> </a>
+				<a href="https://github.com/saezurucrow" target="_blank" class="menu-item github"> <i
+						class="fab fa-github"></i></a>
+				<a href="https://twitter.com/len_crow" target="_blank" class="menu-item twitter"> <i class="fab fa-twitter"></i>
+				</a>
+				<a href="https://qiita.com/len_crow" target="_blank" class="menu-item qiita"> <img src="image/qiita-favicon.png"
+						width="25" height="25"> </a>
+				<a href="https://www.wantedly.com/users/75384147" target="_blank" class="menu-item wantedly"> <img
+						src="image/wantedly_mark.png" width="30" height="30"> </a>
 
 			</nav>
+
+			<div id="modal01" class="modal js-modal">
+				<div class="modal__bg js-modal-close"></div>
+				<div class="modal__content">
+					<p>1つ目モーダルウィンドウです。ここにモーダルウィンドウで表示したいコンテンツを入れます。モーダルウィンドウを閉じる場合は下の「閉じる」をクリックするか、背景の黒い部分をクリックしても閉じることができます。</p>
+					<a class="js-modal-close" href="">閉じる</a>
+				</div>
+				<!--modal__inner-->
+			</div>
+			<!--modal-->
+			<div id="modal02" class="modal js-modal">
+				<div class="modal__bg js-modal-close"></div>
+				<div class="modal__content">
+					<p>2つ目モーダルウィンドウです。ここにモーダルウィンドウで表示したいコンテンツを入れます。モーダルウィンドウを閉じる場合は下の「閉じる」をクリックするか、背景の黒い部分をクリックしても閉じることができます。</p>
+					<a class="js-modal-close" href="">閉じる</a>
+				</div>
+				<!--modal__inner-->
+			</div>
+			<!--modal-->
 
 
 			<!-- filters -->
@@ -54,7 +78,7 @@
 			</svg>
 
 			<script src="https://kit.fontawesome.com/0074c0314f.js" crossorigin="anonymous"></script>
-			</script>
+			<script src="js/jquery.min.js"></script>
 	</body>
 
 </html>
