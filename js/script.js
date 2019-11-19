@@ -1,5 +1,3 @@
-// モーダル表示 https://webdesignday.jp/inspiration/pickup/4680/
-
 $(function () {
   $('.js-modal-open').each(function () {
     $(this).on('click', function () {
