@@ -1,98 +1,151 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>saezurucorw's Page</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-	<head>
-		<meta charset="UTF-8">
-		<title>saezurucorw's Page</title>
-		<link rel="stylesheet" href="css/style.css">
-	</head>
+  <body>
+    <h1 class="title">saezurucrow</h1>
+    <h2 class="title">(len_crow)</h2>
 
-	<body>
-		<main>
+    <nav class="menu">
+      <input
+        type="checkbox"
+        href="#"
+        class="menu-open"
+        name="menu-open"
+        id="menu-open"
+      />
+      <label class="menu-open-button" for="menu-open">
+        <span class="hamburger hamburger-1"></span>
+        <span class="hamburger hamburger-2"></span>
+        <span class="hamburger hamburger-3"></span>
+      </label>
 
-			<h1 class="title">saezurucrow</h1>
-			<h2 class="title">(len_crow)</h2>
+      <a href="" class="menu-item about js-modal-open" data-target="modal01">
+        <i class="far fa-address-card"></i>
+      </a>
+      <a href="" class="menu-item pf js-modal-open" data-target="modal02">
+        <i class="far fa-file-code"></i>
+      </a>
+      <a
+        href="https://github.com/saezurucrow"
+        target="_blank"
+        class="menu-item github"
+      >
+        <i class="fab fa-github"></i
+      ></a>
+      <a
+        href="https://twitter.com/len_crow"
+        target="_blank"
+        class="menu-item twitter"
+      >
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a
+        href="https://qiita.com/len_crow"
+        target="_blank"
+        class="menu-item qiita"
+      >
+        <img src="image/qiita-favicon.png" width="25" height="25" />
+      </a>
+      <a
+        href="https://www.wantedly.com/users/75384147"
+        target="_blank"
+        class="menu-item wantedly"
+      >
+        <img src="image/wantedly_mark.png" width="30" height="30" />
+      </a>
+    </nav>
 
-			<nav class="menu">
-				<input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
-				<label class="menu-open-button" for="menu-open">
-					<span class="hamburger hamburger-1"></span>
-					<span class="hamburger hamburger-2"></span>
-					<span class="hamburger hamburger-3"></span>
-				</label>
+    <div id="modal01" class="modal js-modal">
+      <div class="modal__bg js-modal-close"></div>
+      <div class="modal__content">
+        <h2>ABOUT</h2>
+        <div class="image_box">
+          <img src="image/about1.jpg" class="img" />
+          <img src="image/about2.jpg" class="img" />
+        </div>
+        <p>情報科学専門学校 3年</p>
+        <h3>Skill</h3>
+        <p>HTML/CSS/JavaScript/Ruby/Ruby on Rails/Git</p>
+        <h3>Interest</h3>
+        <p>音楽ゲーム、旅行、ダーツ、麻雀</p>
+        <p>
+          インターンでITスクールのメンターとして活動。未経験のWebエンジニア希望の方に指導。
+        </p>
+        <a class="js-modal-close" href="">閉じる</a>
+      </div>
+    </div>
+    <!-- TODO: スクロールを可能にする -->
+    <div id="modal02" class="modal js-modal">
+      <div class="modal__bg js-modal-close"></div>
+      <div class="modal__content">
+        <h2>Works</h2>
+        <h3>ドブルゲーム</h3>
+        <p>パーティーゲームを模倣したサイト</p>
+        <p>HTML/CSS/jQuery</p>
+        <p><a href="https://github.com/saezurucrow/dobble-site">GitHub</a></p>
+        <p><a href="https://saezurucrow.github.io/dobble-site/">URL</a></p>
+        <hr />
+        <h3>Bookers2</h3>
+        <p>基本的なCRUD機能を用いた本共有サイト</p>
+        <p>ERB/SCSS/Rails</p>
+        <p><a href="https://github.com/saezurucrow/bookers2">GitHub</a></p>
+        <hr />
+        <h3>ec-site</h3>
+        <p>カート機能などを作成した、EC模倣サイト</p>
+        <p><a href="http://saezurucrow-ec-site.herokuapp.com/">URL</a></p>
+        <p>ERB/SCSS/Rails</p>
+        <hr />
+        <h3>WACCAスコアツール</h3>
+        <p>comming soon...</p>
+        <a class="js-modal-close" href="">閉じる</a>
+      </div>
+    </div>
 
-				<a href="" class="menu-item about js-modal-open" data-target="modal01"> <i class="far fa-address-card"></i> </a>
-				<a href="" class="menu-item pf js-modal-open" data-target="modal02"> <i class="far fa-file-code"></i> </a>
-				<a href="https://github.com/saezurucrow" target="_blank" class="menu-item github"> <i
-						class="fab fa-github"></i></a>
-				<a href="https://twitter.com/len_crow" target="_blank" class="menu-item twitter"> <i class="fab fa-twitter"></i>
-				</a>
-				<a href="https://qiita.com/len_crow" target="_blank" class="menu-item qiita"> <img src="image/qiita-favicon.png"
-						width="25" height="25"> </a>
-				<a href="https://www.wantedly.com/users/75384147" target="_blank" class="menu-item wantedly"> <img
-						src="image/wantedly_mark.png" width="30" height="30"> </a>
+    <!-- filters -->
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <defs>
+        <filter id="shadowed-goo">
+          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+          <feColorMatrix
+            in="blur"
+            mode="matrix"
+            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+            result="goo"
+          />
+          <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+          <feColorMatrix
+            in="shadow"
+            mode="matrix"
+            values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2"
+            result="shadow"
+          />
+          <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+          <feComposite in2="shadow" in="goo" result="goo" />
+          <feComposite in2="goo" in="SourceGraphic" result="mix" />
+        </filter>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+          <feColorMatrix
+            in="blur"
+            mode="matrix"
+            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+            result="goo"
+          />
+          <feComposite in2="goo" in="SourceGraphic" result="mix" />
+        </filter>
+      </defs>
+    </svg>
 
-			</nav>
-
-			<div id="modal01" class="modal js-modal">
-				<div class="modal__bg js-modal-close"></div>
-				<div class="modal__content">
-					<h2>ABOUT</h2>
-					<div class="image_box">
-						<img src="image/about1.jpg" class="img">
-						<img src="image/about2.jpg" class="img">
-					</div>
-					<p>情報科学専門学校 3年</p>
-					<h3>Skill</h3>
-					<p>HTML/CSS/JavaScript/Ruby/Ruby on Rails/Git</p>
-					<h3>Interest</h3>
-					<p>音楽ゲーム、旅行、ダーツ、麻雀</p>
-					<p>インターンでITスクールのメンターとして活動。未経験のWebエンジニア希望の方に指導。</p>
-					<a class="js-modal-close" href="">閉じる</a>
-				</div>
-			</div>
-			<div id="modal02" class="modal js-modal">
-				<div class="modal__bg js-modal-close"></div>
-				<div class="modal__content">
-					<h2>Works</h2>
-					<h3>Bookers2</h3>
-					<p>基本的なCRUD機能を用いた本共有サイト</p>
-					<p>ERB/SCSS/Rails</p>
-					<p><a href="https://github.com/saezurucrow/bookers2">GitHub</a></p>
-					<h3>ec-site</h3>
-					<p>カート機能などを作成した、EC模倣サイト</p>
-					<p><a href="http://saezurucrow-ec-site.herokuapp.com/">URL</a></p>
-					<p>ERB/SCSS/Rails</p>
-					<h3>WACCAスコアツール</h3>
-					<p>comming soon...</p>
-					<a class="js-modal-close" href="">閉じる</a>
-				</div>
-			</div>
-
-			<!-- filters -->
-			<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-				<defs>
-					<filter id="shadowed-goo">
-						<feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-						<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-						<feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
-						<feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2"
-							result="shadow" />
-						<feOffset in="shadow" dx="1" dy="1" result="shadow" />
-						<feComposite in2="shadow" in="goo" result="goo" />
-						<feComposite in2="goo" in="SourceGraphic" result="mix" />
-					</filter>
-					<filter id="goo">
-						<feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-						<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-						<feComposite in2="goo" in="SourceGraphic" result="mix" />
-					</filter>
-				</defs>
-			</svg>
-
-			<script src="https://kit.fontawesome.com/0074c0314f.js" crossorigin="anonymous"></script>
-			<script src="js/jquery.min.js"></script>
-			<script src="js/script.js"></script>
-	</body>
-
+    <script
+      src="https://kit.fontawesome.com/0074c0314f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
